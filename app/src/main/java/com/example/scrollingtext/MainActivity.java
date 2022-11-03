@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (abierto==false){
                     comen = new EditText(MainActivity.this);
-                    li.addView(comen,2);
+                    li.addView(comen);
                     abierto=true;
                 }else {
                     li.removeView(comen);

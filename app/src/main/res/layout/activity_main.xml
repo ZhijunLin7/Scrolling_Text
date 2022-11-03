@@ -27,41 +27,54 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         >
+
        <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:orientation="vertical"
-           android:id="@+id/linearlayout">
+           android:orientation="horizontal"
+           >
 
-           <TextView
-               android:id="@+id/subtitulo"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_margin="10dp"
-               android:gravity="center"
-               android:text="Behind That Locked Door: Beatles Rarities!"
-               android:textAppearance="@style/TextAppearance.AppCompat"
-               android:textSize="16sp"
-               android:textStyle="bold" />
+         <RelativeLayout
+             android:layout_width="100dp"
+             android:layout_height="wrap_content"
+             >
+             <TextView
+                 android:id="@+id/subtitulo"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:gravity="center"
+                 android:text="Behind That Locked Door: Beatles Rarities!"
+                 android:textAppearance="@style/TextAppearance.AppCompat"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:lineSpacingExtra="5sp"
-               android:text="@string/article_text"
-               app:layout_constraintBottom_toBottomOf="parent"
-               app:layout_constraintEnd_toEndOf="parent"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toTopOf="parent"
-               android:autoLink="web"/>
+         </RelativeLayout>
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:id="@+id/linearlayout">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:lineSpacingExtra="5sp"
+                  android:text="@string/article_text"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  android:autoLink="web"/>
 
 
-           <Button
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:id="@+id/boton_añadir"
-               android:text="Añadir comentario"></Button>
+              <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/boton_añadir"
+                  android:text="Añadir comentario"></Button>
 
+          </LinearLayout>
        </LinearLayout>
     </ScrollView>
 
